@@ -44,22 +44,22 @@ body {
   text-decoration: none;
 }
 
-.header__item--1 {
+.header__item--one {
   padding-left: 72px;
   text-decoration: none;
 }
 
-.header__item--2 {
+.header__item--two {
   padding-left: 134px;
   padding-right: 300px;
   text-decoration: none;
 }
 
-.header__item--3 {
+.header__item--three {
   text-decoration: none;
 }
 
-.header__item--4 {
+.header__item--four {
   text-decoration: none;
   padding-left: 147px;
 }
