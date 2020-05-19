@@ -4,7 +4,7 @@
   --special-red: ;
 } */
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,28 +23,53 @@ body {
 }
 
 .container {
+  position: relative;
   background-color: #fff;
-  border: 1px solid black;
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-.header-nav {
-  height: 56px;
+.header-menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  line-height: 56px;
+  justify-content: flex-start;
 }
 
-.header-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-transform: uppercase;
+.header__item {
+  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-} */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__item--1 {
+  padding-left: 72px;
+  text-decoration: none;
+}
+
+.header__item--2 {
+  padding-left: 134px;
+  padding-right: 300px;
+  text-decoration: none;
+}
+
+.header__item--3 {
+  text-decoration: none;
+}
+
+.header__item--4 {
+  text-decoration: none;
+  padding-left: 147px;
+}
+
+.header-logo {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+}
