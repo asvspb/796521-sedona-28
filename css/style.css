@@ -31,6 +31,10 @@ body {
 }
 
 .header-menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
   display: flex;
   line-height: 56px;
   justify-content: flex-start;
@@ -74,50 +78,62 @@ body {
   margin: 0 auto;
 }
 
+/* main  */
 .dorem {
   height: 562px;
   background-color: rgb(46, 96, 139);
 }
 
+/* footer */
+
 .footer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-around;
   height: 120px;
 }
 
 .footer-contacts {
-  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
-  padding-left: 117px;
+  text-transform: uppercase;
+  margin-top: 23px;
+}
+
+.footer-contacts__visit {
+  margin-bottom: 9px;
 }
 
 .footer-social {
-  padding-left: 178px;
+  margin-top: 36px;
 }
 
-.footer-visit {
-  padding-bottom: 9px;
-}
-
-.icons-footer {
+.footer-icons {
   display: flex;
+  justify-content: center;
 }
 
-.icons-footer--two {
-  padding-left: 9px;
+.footer-icons__twitter {
+  margin-right: 6px;
+}
+
+.footer-icons__facebook {
+  margin-right: 6px;
 }
 
 .footer-logo {
   display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer-logo__text {
-  text-transform: uppercase;
-  padding-left: 228px;
-  line-height: 48px;
-  padding-right: 8px;
+  margin-right: 10px;
 }
