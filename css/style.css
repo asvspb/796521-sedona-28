@@ -75,9 +75,22 @@ body {
 }
 
 /* main  */
-.dorem {
-  height: 562px;
-  background-color: rgb(46, 96, 139);
+.welcome {
+  position: relative;
+}
+
+.welcome-logo {
+}
+
+.welcome-logo__img {
+  position: absolute;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 76.35px auto;
 }
 
 /* footer */
