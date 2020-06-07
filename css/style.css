@@ -4,7 +4,7 @@
   --special-red: ;
 } */
 
-.workbox {
+.workbox:hover {
   border: 1px solid black;
 }
 
@@ -156,3 +156,5 @@ body {
 .footer-logo__text {
   margin-right: 10px;
 }
+
+
