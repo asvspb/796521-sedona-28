@@ -16,11 +16,11 @@
   <div class="container">
     <!-- Навигация -->
     <header class="header">
-      <img class="header-logo" src="img/logo.png" height="70" width="138" alt="логотип">
+      <a href="index.html"><img class="header-logo" src="img/logo.png" height="70" width="138" alt="логотип"></a>
       <nav class="header-nav">
         <ul class="header-menu">
           <li class="header__item">
-            <a class="header__item--one" href="index.html">Информация</a>
+            <a class="header__item--one" href="#">Информация</a>
           </li>
           <li class="header__item"><a class="header__item--two" href="#">Фото и видео</a></li>
           <li class="header__item"><a class="header__item--three" href="#">Карта штата</a></li>
@@ -32,37 +32,45 @@
     <main class="dorem">
       <!-- Поиск отелей -->
       <section class="">
+        <h2 class="visually-hidden">Поиск отелей</h2>
         <div class="">
           <img class="" src="img/background-hotels.jpg" width="1200" height="217" alt="фон отелей">
           <div class="">
             <p class="">Инфраструктура:</p>
-            <form action="todo" class="">
-              <input type="checkbox" name="" id="">
-              <label for="">Бассейн</label>
-              <input type="checkbox" name="" id="">
-              <label for="">Парковка</label>
-              <input type="checkbox" name="" id="">
-              <label for="">Wi-Fi</label>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="">
+              <label >Бассейн
+                <input type="checkbox" name="pool">
+              </label>
+              <label >Парковка
+                <input type="checkbox" name="parking">
+              </label>
+              <label >Wi-Fi
+                <input type="checkbox" name="wifi">
+              </label>
             </form>
           </div>
           <div class="">
             <p class="">Тип жилья:</p>
-            <form action="todo" class="">
-              <input type="checkbox" name="" id="">
-              <label for="">Гостиница</label>
-              <input type="checkbox" name="" id="">
-              <label for="">Мотель</label>
-              <input type="checkbox" name="" id="">
-              <label for="">Апартаменты</label>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="">
+              <label >Гостиница
+                <input type="checkbox" name="hotels">
+              </label>
+              <label >Мотель
+                <input type="checkbox" name="motels">
+              </label>
+              <label >Апартаменты
+                <input type="checkbox" name="apartments">
+              </label>
             </form>
           </div>
           <div class="">
             <p class=""></p>
             <p class=""></p>
             <p class=""></p>
-            <form action="todo" class="">
-              <input type="range" name="" id="">
-              <label for=""></label>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="">
+              <label>
+              <input type="range" name="todo">
+              </label>
               <button type="submit"></button>
             </form>
           </div>
@@ -73,11 +81,11 @@
           <a class="" href="">По цене</a>
           <a class="" href="">По типу</a>
           <a class="" href="">По рейтингу</a>
-          <a class="" href="" aria-label="sorting" role="button"><span>&utrif;</span></a>
-          <a class="" href="" aria-label="sorting" role="button"><span>&dtrif;</span></a>
+          <a class="" href="" aria-label="Сортировка по возрастанию" role="button"><span>&utrif;</span></a>
+          <a class="" href="" aria-label="Сортировка по убыванию" role="button"><span>&dtrif;</span></a>
         </div>
       </section>
-      
+
       <!-- Отели Седоны -->
       <section class="about-sedona">
         <h2 class="visually-hidden">Список отелей</h2>
@@ -117,14 +125,14 @@
       </section>
       <section>
         <h2 class="visually-hidden">!</h2>
-        <form action="todo"></form>
+        <form action="https://echo.htmlacademy.ru" method="POST"></form>
         <div></div>
       </section>
 
       <!-- Всплывающее окно -->
       <section class="popup">
         <h3 class="visually-hidden">!</h3>
-        <form action="todo"></form>
+        <form action="https://echo.htmlacademy.ru" method="POST"></form>
       </section>
 
     </main>
@@ -136,7 +144,7 @@
       </div>
       <div class="footer-social">
         <ul class="footer-icons">
-          <li class="footer-icons__twitter"><a href=""><svg width="46" height="48" viewBox="0 0 46 48" fill="none"
+          <li class="footer-icons__twitter"><a href="" aria-label="twitter-link"><svg width="46" height="48" viewBox="0 0 46 48" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path
@@ -144,13 +152,13 @@
                   fill="white" />
               </svg></a>
           </li>
-          <li class="footer-icons__facebook"><a href="" class=""><svg width="46" height="48" viewBox="0 0 46 48"
+          <li class="footer-icons__facebook"><a href="" class="" aria-label="facebook-link"><svg width="46" height="48" viewBox="0 0 46 48"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path d="M29 17V13H25C22.7909 13 21 14.7909 21 17V21H17V25H21V35H25V25H29V21H25V17H29Z" fill="white" />
               </svg></a>
           </li>
-          <li class="footer-icons__youtube"><a href="" class=""><svg width="46" height="48" viewBox="0 0 46 48"
+          <li class="footer-icons__youtube"><a href="" class="" aria-label="youtube-link"><svg width="46" height="48" viewBox="0 0 46 48"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path fill-rule="evenodd" clip-rule="evenodd"

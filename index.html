@@ -40,7 +40,7 @@
           <img class="welcome-logo__shape" src="img/Shape.svg" height="57" width="1200" alt="декоративный элемент">
         </div>
         <article class="">
-          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+          <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
           <p class="">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </article>
       </section>
@@ -80,7 +80,7 @@
         <div>
           <article>
             <h3 class="visually-hidden">!</h3>
-            <p class="">Там есть  Мост дьявола</p>
+            <p class="">Там есть Мост дьявола</p>
             <p class="">— №2 —</p>
             <p class="">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </article>
@@ -110,15 +110,29 @@
         <!-- Итоговый раздел -->
         <section>
           <h2 class="visually-hidden">Предложения по размещению в гостиницах Седоны</h2>
-          <p>Заинтересовались?  </p>
-          <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+          <p>Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </section>
       </section>
 
       <!-- Всплывающее окно -->
       <section class="popup">
-        <h3 class="visually-hidden">!</h3>
-        <form action="todo"></form>
+        <h3 class="popup-header">Поиск гостиницы в Седоне</h3>
+        <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="popup-form__item">Дата заезда
+            <label><input type="text" name="date" placeholder="24 апреля 2017"></label>
+          </p>
+          <p class="popup-form__item">Дата выезда
+            <label><input type="text" name="date" placeholder="04 июля 2017"></label>
+          </p>
+          <p class="popup-form__item">Взрослые
+            <label><input type="number" name="date" placeholder="2"></label>
+          </p>
+          <p class="popup-form__item">Дети
+            <label><input type="number" name="date" placeholder="0"></label>
+          </p>
+          <input class="popup-form__btn" type="submit" value="Найти">
+        </form>
       </section>
 
     </main>
@@ -130,7 +144,7 @@
       </div>
       <div class="footer-social">
         <ul class="footer-icons">
-          <li class="footer-icons__twitter"><a href=""><svg width="46" height="48" viewBox="0 0 46 48" fill="none"
+          <li class="footer-icons__twitter"><a href="" aria-label="twitter-link"><svg width="46" height="48" viewBox="0 0 46 48" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path
@@ -138,13 +152,13 @@
                   fill="white" />
               </svg></a>
           </li>
-          <li class="footer-icons__facebook"><a href="" class=""><svg width="46" height="48" viewBox="0 0 46 48"
+          <li class="footer-icons__facebook"><a href="" class="" aria-label="facebook-link"><svg width="46" height="48" viewBox="0 0 46 48"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path d="M29 17V13H25C22.7909 13 21 14.7909 21 17V21H17V25H21V35H25V25H29V21H25V17H29Z" fill="white" />
               </svg></a>
           </li>
-          <li class="footer-icons__youtube"><a href="" class=""><svg width="46" height="48" viewBox="0 0 46 48"
+          <li class="footer-icons__youtube"><a href="" class="" aria-label="youtube-link"><svg width="46" height="48" viewBox="0 0 46 48"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="48" fill="#81B3D2" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
