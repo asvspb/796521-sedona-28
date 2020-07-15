@@ -1,28 +1,18 @@
-let quantity = document.querySelector('.quantity');
-let plus = document.querySelector('.plus');
-let counter = 1;
-let minus = document.querySelector('.minus');
+var searchButton = document.querySelector(".legend-button");
+var modalSearch = document.querySelector(".modal-search");
+var dateArrival = document.querySelector(".date-arrival-item");
+var dateDeparture = document.querySelector(".date-departure-item");
+var searchForm = document.querySelector(".index-form");
 
-plus.onclick = function () {
-  counter++;
-  quantity.value = counter;
-}
-minus.onclick = function () {
-  if (counter === 0) {
-    return
-  }
-  counter--;
-  quantity.value = counter;
-}
+searchButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalSearch.classList.add("modal-close");
+  modalSearch.classList.remove("modal-error");
+});
 
-let modal = document.getElementById('search');
-let btn = document.getElementById('my-btn');
-
-btn.onclick = function () {
-  modal.style.display = "flex";
-}
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+searchForm.addEventListener("submit", function (evt) {
+    if (!dateArrival.value || !dateDeparture.value) {
+    evt.preventDefault();
+    modalSearch.classList.add("modal-error");
+    } 
+});
